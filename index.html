@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="styles.css"/>
     <title>Homepage</title>
 </head>
 <body>
     <header>
-        <picture>
+        <div class="hero">
+        <picture class="hero-image">
             <!-- phone -->
             <source srcset="assets\phone.png 400w" media="(max-width: 599px)">
             <!-- tablet -->
@@ -21,21 +25,26 @@
             <img src="assets\desktop.png 1200w" alt="author profile photo">
 
         </picture>
+        <!-- about section -->
         <div class="about">
+            <h1>About me</h1>
             <p>Hey, I’m <span>Adams Kiptalam</span>—a web developer who loves building clean, functional websites. 
                 I’m all about solving problems with code and creating great user experiences. 
                 When I’m not coding, I’m probably learning something new or geeking out over tech. 
                 Let’s build something cool together!</p>
             <div class="socials">
-                <a href="https://github.com/kiptalam1" target="_blank" rel="noopener noreferrer" aria-label="github profile"><i class="devicon-github-original colored"></i></a>
+                <a href="https://github.com/kiptalam1" target="_blank" rel="noopener noreferrer" aria-label="github profile"><i class="devicon-github-original"></i></a>
                 <i class="devicon-linkedin-plain"></i>
-                <i class="devicon-twitter-original colored"></i>
+                <i class="devicon-twitter-original"></i>
             </div>
         </div>
+    </div>
         <svg class="curve" viewBox="0 0 1440 320">
-            <path fill="#f4f4f4" d="M0,320 C480,250 960,150 1440,180 L1440,320 L0,320 Z"></path>
+            <path fill="#f4f4f4" d="M0,320 C300,200 600,100 1440,100 L1440,320 L0,320 Z"></path>
+            <!-- <path fill="#f4f4f4" d="M0,320 C470,250 950,200 1440,180 L1440,320 L0,330 Z"></path> -->
         </svg>
     </header>
+
     <!-- Projects Section -->
     <section class="projects">
 
@@ -56,7 +65,7 @@
             <div class="project-description">
                 <div class="project-header">
                     <h4>Restaurant website</h4>
-                    <a href="https://kiptalam1.github.io/Restaurant-Page/" target="_blank" rel="noopener noreferrer" aria-label="Restaurant page"><i class="devicon-github-original colored"></i></a>
+                    <a href="https://kiptalam1.github.io/Restaurant-Page/" target="_blank" rel="noopener noreferrer" aria-label="Restaurant page"><i class="devicon-github-original"></i></a>
                 </div>
                 <p>A website for a restaurant to view menus</p>
             </div>
@@ -79,7 +88,7 @@
             <div class="project-description">
                 <div class="project-header">
                     <h4>Admin Dashboard</h4>
-                    <a href="https://kiptalam1.github.io/Admin-Dashboard/" target="_blank" rel="noopener noreferrer" aria-label="github admin dashboard"><i class="devicon-github-original colored"></i></a>
+                    <a href="https://kiptalam1.github.io/Admin-Dashboard/" target="_blank" rel="noopener noreferrer" aria-label="github admin dashboard"><i class="devicon-github-original"></i></a>
                 </div>
                 <p>Admin dashboard for managing projects.</p>
             </div>
@@ -101,7 +110,7 @@
             <div class="project-description">
                 <div class="project-header">
                     <h4>Weather App</h4>
-                    <a href="https://kiptalam1.github.io/WeatherApp/" target="_blank" rel="noopener noreferrer" aria-label="github weather app"><i class="devicon-github-original colored"></i></a>
+                    <a href="https://kiptalam1.github.io/WeatherApp/" target="_blank" rel="noopener noreferrer" aria-label="github weather app"><i class="devicon-github-original"></i></a>
                 </div>
                 <p>A website that checks weather globally.</p>
             </div>
@@ -124,7 +133,7 @@
             <div class="project-description">
                 <div class="project-header">
                     <h4>TicTacToe Game</h4>
-                    <a href="https://kiptalam1.github.io/TicTacToe/" target="_blank" rel="noopener noreferrer" aria-label="github tictactoe page"><i class="devicon-github-original colored"></i></a>
+                    <a href="https://kiptalam1.github.io/TicTacToe/" target="_blank" rel="noopener noreferrer" aria-label="github tictactoe page"><i class="devicon-github-original"></i></a>
                 </div>
                 <p>A game of tic-tac-toe played on the web.</p>
             </div>
@@ -135,12 +144,12 @@
             <h4>Contact me</h4>
             <p>Please get in touch if you think our work would be mutually beneficial.</p>
             <p>Nairobi, Kenya</p>
-            <p><img src="assets\phone-outline.svg" alt="" width="24"> +25470744645</p>
-            <p><img src="assets\email-outline.svg" alt="" width="24"> adamskiptalam0@gmail.coom</p>
+            <p class="icon-text"><img src="assets\phone-outline.svg" alt="" width="24" class="icon"> +25470744645</p>
+            <p class="icon-text"><img src="assets\email-outline.svg" alt="" width="24" class="icon"> adamskiptalam0@gmail.com</p>
             <div class="socials">
-                <a href="https://github.com/kiptalam1" target="_blank" rel="noopener noreferrer" aria-label="github profile"><i class="devicon-github-original colored"></i></a>
+                <a href="https://github.com/kiptalam1" target="_blank" rel="noopener noreferrer" aria-label="github profile"><i class="devicon-github-original"></i></a>
                 <i class="devicon-linkedin-plain"></i>
-                <i class="devicon-twitter-original colored"></i>
+                <i class="devicon-twitter-original"></i>
             </div>
         </div>
         <div class="contact-image">

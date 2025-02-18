@@ -1,0 +1,213 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid green; */
+}
+:root {
+    --white-color: whitesmoke;
+    --tan: #D2B48C;
+    --cadet-blue: #5F9EA0;
+    --black: #333333;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: var(--white-color);
+    color: var(--black);
+    margin-top: 0;
+
+}
+/* Header */
+header {
+    background-color: var(--cadet-blue);
+    padding: 2.5rem 0;
+    position:relative;
+}
+.curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 0;
+
+}
+.hero {
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    gap: 1.25rem;
+    z-index: 1;
+    position: relative;
+}
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.about {
+    flex: 1;
+    margin-left: 20px;
+    max-width: 50%;
+    max-height: 500px;
+    background-color: var(--white-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+}
+.about h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 1.25rem;
+
+}
+.about p {
+    font-size: 1.5rem;
+    padding: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+.about span {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--tan);
+}
+/* icons */
+.socials {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.25rem;
+    color: var(--cadet-blue);
+    fill: var(--cadet-blue);
+    transition: color 0.3s ease;
+
+}
+.socials .devicon-github-original {
+    color: var(--cadet-blue);
+    transition: color 0.3s ease;
+}
+.socials .devicon-github-original:hover {
+    color: var(--tan);
+
+}
+
+.socials:hover {
+    color: var(--tan);
+}
+/*  Projects Section */
+.projects {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    padding: 1.25rem 3.125rem;
+}
+.project {
+    flex: 1 1 calc(50% - 40px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 5px;
+}
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.project-description {
+    
+    padding: 1.25rem;
+    
+}
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+.project-header h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cadet-blue);
+}
+.project-header .devicon-github-original {
+    /* align-self: flex-end; */
+    font-size: 1.5rem;
+    color: var(--cadet-blue);
+    transition: color 0.2s ease;
+}
+.project-header .devicon-github-original:hover {
+    color: var(--tan);
+}
+.project-description p {
+    color: #333;
+    font-size: 0.9rem;
+}
+/* contacts section */
+.contacts-section {
+    display: flex;
+    gap: 2.5rem;
+    margin: 2.5rem auto;
+    margin-bottom: 0;
+    padding: 5rem;
+    justify-content: space-around;
+    background-color: var(--cadet-blue);
+    color: var(--white-color);
+}
+.contacts{
+    flex: 1;
+    max-width: 50%;
+    max-height: 500px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+
+}
+.contacts .socials {
+    padding: 0;
+    color: var(--white-color)
+}
+.contacts .devicon-github-original {
+    color: var(--white-color);
+}
+.contacts h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.contacts p {
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+.icon {
+    filter: brightness(0) invert(1);
+}
+.contact-image{
+    flex: 1;
+    max-width: 50%;
+
+}
+.contact-image img{
+    width:100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
+    display: block;
+}
